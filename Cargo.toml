@@ -1,0 +1,20 @@
+[package]
+name = "git-credential-null"
+version = "1.0.0"
+authors = ["Pietro Albini <pietro@pietroalbini.org>"]
+edition = "2018"
+
+documentation = "https://github.com/pietroalbini/git-credential-null/blob/master/README.md"
+repository = "https://github.com/pietroalbini/git-credential-null"
+description = "Git credential helper to disable git password prompts."
+license = "MIT"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+tiny_http = "0.6.2"
+tempfile = "3.1.0"
+wait-timeout = "0.2.0"
