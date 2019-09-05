@@ -52,7 +52,7 @@ dependencies = [
 
 [[package]]
 name = "git-credential-null"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "tempfile 3.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "tiny_http 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
