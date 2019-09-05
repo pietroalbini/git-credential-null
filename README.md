@@ -14,11 +14,11 @@ Install this Rust package with:
 cargo install git-credential-null
 ```
 
-Then pass the `-c credential.helper=null` when you want to disable the prompt.
-For example:
+Then pass `-c credential.helper= -c credential.helper=null` when you want to
+disable the prompt. For example:
 
 ```
-git -c credential.helper=null clone https://github.com/ghost/doesnt-exist
+git -c credential.helper= -c credential.helper=null clone https://github.com/ghost/doesnt-exist
 ```
 
 [helper]: https://git-scm.com/docs/gitcredentials#Documentation/gitcredentials.txt-helper
