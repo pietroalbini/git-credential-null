@@ -85,7 +85,7 @@ fn test_clone_works(auth: bool) -> bool {
         .spawn()
         .unwrap();
     match child
-        .wait_timeout(std::time::Duration::from_secs(1))
+        .wait_timeout(std::time::Duration::from_secs(10))
         .unwrap()
     {
         Some(status) => status.success(),
