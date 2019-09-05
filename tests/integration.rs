@@ -72,7 +72,10 @@ fn test_clone_works(auth: bool) -> bool {
         .arg("-c")
         .arg("credential.helper=")
         .arg("-c")
-        .arg(format!("credential.helper={}", binary(BIN).display()))
+        .arg(format!(
+            "credential.helper={}",
+            binary(BIN).display().to_string().replace('\\', "/")
+        ))
         .arg("clone")
         .arg(format!("http://localhost:{}", port))
         .arg(clone_dest.path())
